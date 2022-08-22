@@ -64,3 +64,26 @@ npm install --registry=https://registry.npm.taobao.org
 打开命令行工具 输入`npm run start`
 输出如图即可
 ![天行数据平台](/images/11.png)
+
+## 项目部署(云服务器定时项目)
+
+需要拥有一台云服务器，这里才用 Linux centos7.6
+
+云服务器 Linux 安装 nodejs
+
+[安装 Node 环境](https://nodejs.org/en/)
+
+云服务器 Linux 安装 forever
+
+```bash
+npm install -g forever
+```
+
+进入项目目录 执行命令
+
+```bash
+cd wechat-message
+forever start -c "npm run start" ./
+```
+
+由于云服务器 pm2 环境异常，ts-node 映射失败，所以才要 forever 做进程管理。
