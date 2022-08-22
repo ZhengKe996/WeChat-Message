@@ -4,7 +4,7 @@ const config = {
   wx: {
     appID: "", // 微信公众平台 appID
     appsecret: "", //微信公众平台 appsecret
-    wxNumber: "", // 微信公众平台 微信号
+    wxNumber: "", // 微信公众平台 需要发送对象的微信号
     templateId: "", // 微信公众平台 消息模板
   },
   tx: {
@@ -12,7 +12,7 @@ const config = {
   },
   requestdata: {
     city: "杭州", // 天气预报城市
-    star: "taurus", //十二星座英文名：aries 白羊座, taurus 金牛座, gemini 双子座, cancer 巨蟹座, leo 狮子座, virgo 处女座, libra 天秤座, scorpio 天蝎座, sagittarius 射手座, capricorn 摩羯座, aquarius 水瓶座, pisces 双鱼座。
+    star: "cancer", //十二星座英文名：aries 白羊座, taurus 金牛座, gemini 双子座, cancer 巨蟹座, leo 狮子座, virgo 处女座, libra 天秤座, scorpio 天蝎座, sagittarius 射手座, capricorn 摩羯座, aquarius 水瓶座, pisces 双鱼座。
   },
   wxTemp: {
     data: {
