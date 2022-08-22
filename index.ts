@@ -1,4 +1,5 @@
 import axios from "axios";
+import nodeSchedule from "node-schedule";
 import config from "./config";
 import { randomRGB } from "./utils/getColor";
 import { getLZMY, getStar, getTianqi } from "./utils/getTxData";
@@ -39,4 +40,6 @@ const sendWxMessage = async () => {
   console.log(data);
 };
 
-sendWxMessage();
+nodeSchedule.scheduleJob("30 1 7 * * *", function () {
+  sendWxMessage();
+});
